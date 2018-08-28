@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: URL Map
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/url-map/master/_listings/google-compute-engine/apis.md
 specificationVersion: "0.14"
 apis:
@@ -26,6 +26,18 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/url-map/master/_listings/google-compute-engine/projectglobalurlmaps-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/url-map/master/_listings/google-compute-engine/projectglobalurlmaps-get-openapi.md
+- name: Compute Engine - Create URL Map
+  x-api-slug: projectglobalurlmaps-post
+  description: Creates a UrlMap resource in the specified project using the data included
+    in the request.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Google_Compute_Engine_logo.png
+  humanURL: https://cloud.google.com/compute/
+  baseURL: ://www.googleapis.com//compute/v1/projects
+  tags: Compute, Cloud, Google APIs, Stack Network, API Service Provider, API Provider,
+    Deployments, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/url-map/master/_listings/google-compute-engine/projectglobalurlmaps-post-openapi.md
 - name: Compute Engine - Delete URL Map
   x-api-slug: projectglobalurlmapsurlmap-delete
   description: Deletes the specified UrlMap resource.
@@ -53,6 +65,41 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/url-map/master/_listings/google-compute-engine/projectglobalurlmapsurlmap-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/url-map/master/_listings/google-compute-engine/projectglobalurlmapsurlmap-get-openapi.md
+- name: Compute Engine - Update URL Map
+  x-api-slug: projectglobalurlmapsurlmap-patch
+  description: Updates the specified UrlMap resource with the data included in the
+    request. This method supports patch semantics.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Google_Compute_Engine_logo.png
+  humanURL: https://cloud.google.com/compute/
+  baseURL: ://www.googleapis.com//compute/v1/projects
+  tags: Compute, Cloud, Google APIs, Stack Network, API Service Provider, API Provider,
+    Deployments, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/url-map/master/_listings/google-compute-engine/projectglobalurlmapsurlmap-patch-openapi.md
+- name: Compute Engine - Update URL Map
+  x-api-slug: projectglobalurlmapsurlmap-put
+  description: Updates the specified UrlMap resource with the data included in the
+    request.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Google_Compute_Engine_logo.png
+  humanURL: https://cloud.google.com/compute/
+  baseURL: ://www.googleapis.com//compute/v1/projects
+  tags: Compute, Cloud, Google APIs, Stack Network, API Service Provider, API Provider,
+    Deployments, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/url-map/master/_listings/google-compute-engine/projectglobalurlmapsurlmap-put-openapi.md
+- name: Compute Engine - Target HTTP Proxies URL Map
+  x-api-slug: projecttargethttpproxiestargethttpproxyseturlmap-post
+  description: Changes the URL map for TargetHttpProxy.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Google_Compute_Engine_logo.png
+  humanURL: https://cloud.google.com/compute/
+  baseURL: ://www.googleapis.com//compute/v1/projects
+  tags: Compute, Cloud, Google APIs, Stack Network, API Service Provider, API Provider,
+    Deployments, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/url-map/master/_listings/google-compute-engine/projecttargethttpproxiestargethttpproxyseturlmap-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://google.cloud.vision.api.gallery.streamdata.io

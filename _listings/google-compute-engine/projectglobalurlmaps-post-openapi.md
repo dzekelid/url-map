@@ -3,8 +3,9 @@ swagger: "2.0"
 x-collection-name: Google Compute Engine
 x-complete: 0
 info:
-  title: Google Compute Engine API Delete URL Map
-  description: Deletes the specified UrlMap resource.
+  title: Google Compute Engine API Create URL Map
+  description: Creates a UrlMap resource in the specified project using the data included
+    in the request.
   contact:
     name: Google
     url: https://google.com
@@ -61,24 +62,6 @@ paths:
       - in: path
         name: project
         description: Project ID for this request
-      responses:
-        200:
-          description: OK
-      tags:
-      - URL Map
-  /{project}/global/urlMaps/{urlMap}:
-    delete:
-      summary: Delete URL Map
-      description: Deletes the specified UrlMap resource.
-      operationId: compute.urlMaps.delete
-      x-api-path-slug: projectglobalurlmapsurlmap-delete
-      parameters:
-      - in: path
-        name: project
-        description: Project ID for this request
-      - in: path
-        name: urlMap
-        description: Name of the UrlMap resource to delete
       responses:
         200:
           description: OK

@@ -3,8 +3,9 @@ swagger: "2.0"
 x-collection-name: Google Compute Engine
 x-complete: 0
 info:
-  title: Google Compute Engine API Delete URL Map
-  description: Deletes the specified UrlMap resource.
+  title: Google Compute Engine API Update URL Map
+  description: Updates the specified UrlMap resource with the data included in the
+    request. This method supports patch semantics.
   contact:
     name: Google
     url: https://google.com
@@ -79,6 +80,46 @@ paths:
       - in: path
         name: urlMap
         description: Name of the UrlMap resource to delete
+      responses:
+        200:
+          description: OK
+      tags:
+      - URL Map
+    get:
+      summary: Get URL Map
+      description: Returns the specified UrlMap resource. Get a list of available
+        URL maps by making a list() request.
+      operationId: compute.urlMaps.get
+      x-api-path-slug: projectglobalurlmapsurlmap-get
+      parameters:
+      - in: path
+        name: project
+        description: Project ID for this request
+      - in: path
+        name: urlMap
+        description: Name of the UrlMap resource to return
+      responses:
+        200:
+          description: OK
+      tags:
+      - URL Map
+    patch:
+      summary: Update URL Map
+      description: Updates the specified UrlMap resource with the data included in
+        the request. This method supports patch semantics.
+      operationId: compute.urlMaps.patch
+      x-api-path-slug: projectglobalurlmapsurlmap-patch
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: project
+        description: Project ID for this request
+      - in: path
+        name: urlMap
+        description: Name of the UrlMap resource to update
       responses:
         200:
           description: OK
